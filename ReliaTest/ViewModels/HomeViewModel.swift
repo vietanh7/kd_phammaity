@@ -21,6 +21,7 @@ protocol HomeProtocol: AnyObject {
     func fetchProducts()
     func checkAuthentication()
     func deleteProduct(sku: String)
+    func search(sku: String)
     var isAuthenticated: Bool {get set}
 }
 
@@ -56,6 +57,24 @@ class HomeViewModel: HomeProtocol {
                 }
             }
             .store(in: &cancellableSet)
+    }
+    
+    func search(sku: String) {
+        serviceManager.searchProduct(sku: sku)
+            .sink {[weak self] (response) in
+            self?.handleSearchResult(product: response.value)
+            self?.delegate?.productsDidLoad()
+        }
+        .store(in: &cancellableSet)
+    }
+    
+    func handleSearchResult(product: Product?) {
+        guard let validProduct = product, validProduct.sku.isEmpty == false else {
+            self.productVMs = []
+            return
+        }
+        
+        self.productVMs = [ProductViewModel(product: validProduct)]
     }
     
     func deleteProduct(sku: String) {

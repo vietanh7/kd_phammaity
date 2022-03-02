@@ -48,7 +48,7 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-A9-6Xb">
+                                    <searchBar contentMode="redraw" placeholder="Search by sku" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-A9-6Xb">
                                         <rect key="frame" x="0.0" y="51.5" width="414" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="UdT-FA-irR"/>
@@ -68,6 +68,7 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="6kP-A9-6Xb" firstAttribute="leading" secondItem="LPI-fG-vAp" secondAttribute="leading" id="DAB-91-Dcc"/>
                                     <constraint firstItem="llO-M3-E8x" firstAttribute="leading" secondItem="LPI-fG-vAp" secondAttribute="leading" id="VVF-7I-D1y"/>
                                 </constraints>
                             </stackView>

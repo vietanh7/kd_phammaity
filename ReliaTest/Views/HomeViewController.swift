@@ -10,7 +10,6 @@ import UIKit
 class HomeViewController: BaseViewController {
     
     @IBOutlet weak var authenticatedLabel: UILabel!
-    
     @IBOutlet weak var buttonContainerView: UIStackView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
@@ -129,8 +128,19 @@ extension HomeViewController: HomeDelegate {
 extension HomeViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        //TODO: search action
         searchBar.resignFirstResponder()
+        guard let keyword = searchBar.text, keyword.isEmpty == false else {
+            return
+        }
+        viewModel?.search(sku: keyword)
     }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            viewModel?.fetchProducts()
+        }
+    }
+    
+    
 }
 
