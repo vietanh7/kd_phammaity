@@ -7,14 +7,24 @@
 
 import UIKit
 import CoreData
+import SwiftKeychainWrapper
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if UserDefaults.standard.bool(forKey: Constants.appInstalledKey) == false {
+            let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: Constants.tokenKey)
+            
+            print("remove token\(removeSuccessful)")
+            
+            //update value
+            UserDefaults.standard.set(true, forKey: Constants.appInstalledKey)
+            UserDefaults.standard.synchronize()
+            
+        }
+        
         return true
     }
 

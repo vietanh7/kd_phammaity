@@ -7,6 +7,7 @@ target 'ReliaTest' do
 
   # Pods for ReliaTest
   pod 'Alamofire', '~> 5.5'
+  pod 'SwiftKeychainWrapper'
 
   target 'ReliaTestTests' do
     inherit! :search_paths

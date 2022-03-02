@@ -39,9 +39,15 @@ struct Product: Codable {
         productName = try container.decode(String.self, forKey: .productName)
         quantity = try container.decode(Int.self, forKey: .quantity)
         price = try container.decode(Double.self, forKey: .price)
-        image = try container.decode(String.self, forKey: .image)
+        
         status = try container.decode(Int.self, forKey: .status)
         unit = try container.decode(String.self, forKey: .unit)
+        
+        do {
+            image = try container.decode(String.self, forKey: .image)
+        } catch {
+            image = nil
+        }
         
         let iso8601DateFormatter = ISO8601DateFormatter()
         iso8601DateFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]

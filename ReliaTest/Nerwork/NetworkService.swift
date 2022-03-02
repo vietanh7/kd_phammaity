@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 import Alamofire
+import SwiftKeychainWrapper
 
 extension Encodable {
   var dictionary: [String: Any]? {
@@ -103,9 +104,8 @@ class NetworkService: NetworkServiceProtocol {
     func fetchProuducts() -> AnyPublisher<DataResponse<[Product], NetworkError>, Never> {
         let urlString = baseUrlString + ApiResquest.getAll.rawValue
         let url = URL(string: urlString)!
-        let headers = self.getHeaders()
         
-        let requestData = AF.request(url, method: .get, headers: headers)
+        let requestData = AF.request(url, method: .get)
         
         return makeRequest(request: requestData)
     }
@@ -123,8 +123,9 @@ class NetworkService: NetworkServiceProtocol {
     }
     
     func getHeaders() -> HTTPHeaders? {
-        //TODO: retrieve token from keychain
-        let token = ""
+        guard let token = KeychainWrapper.standard.string(forKey: Constants.tokenKey) else {
+            return nil
+        }
         
         return [.authorization(bearerToken: token)]
     }

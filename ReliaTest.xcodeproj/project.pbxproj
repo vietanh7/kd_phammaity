@@ -10,7 +10,7 @@
 		2436C2401E3531CE2ED213DD /* Pods_ReliaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78718B1F5DD6DA51B73C96 /* Pods_ReliaTestTests.framework */; };
 		24714FA527CF1843005C5A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA427CF1843005C5A3A /* AppDelegate.swift */; };
 		24714FA727CF1843005C5A3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA627CF1843005C5A3A /* SceneDelegate.swift */; };
-		24714FA927CF1843005C5A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA827CF1843005C5A3A /* ViewController.swift */; };
+		24714FA927CF1843005C5A3A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA827CF1843005C5A3A /* HomeViewController.swift */; };
 		24714FAC27CF1843005C5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24714FAA27CF1843005C5A3A /* Main.storyboard */; };
 		24714FAF27CF1843005C5A3A /* ReliaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24714FAD27CF1843005C5A3A /* ReliaTest.xcdatamodeld */; };
 		24714FB127CF1844005C5A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24714FB027CF1844005C5A3A /* Assets.xcassets */; };
@@ -22,6 +22,18 @@
 		24714FDB27CF19EC005C5A3A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FDA27CF19EC005C5A3A /* NetworkError.swift */; };
 		24714FDE27CF1A70005C5A3A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FDD27CF1A70005C5A3A /* Product.swift */; };
 		24714FE227CF1E9E005C5A3A /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FE127CF1E9E005C5A3A /* AuthModels.swift */; };
+		24714FE927CF40CE005C5A3A /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FE727CF40CE005C5A3A /* ProductTableViewCell.swift */; };
+		24714FEA27CF40CE005C5A3A /* ProductTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24714FE827CF40CE005C5A3A /* ProductTableViewCell.xib */; };
+		24714FEC27CF4257005C5A3A /* UITabbleViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FEB27CF4257005C5A3A /* UITabbleViewExtension.swift */; };
+		24714FEE27CF4286005C5A3A /* NSObjectextension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FED27CF4286005C5A3A /* NSObjectextension.swift */; };
+		24714FF027CF42C1005C5A3A /* ProductViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FEF27CF42C1005C5A3A /* ProductViewModel.swift */; };
+		24714FF227CF4443005C5A3A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF127CF4443005C5A3A /* HomeViewModel.swift */; };
+		24714FF427CF465B005C5A3A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF327CF465B005C5A3A /* BaseViewController.swift */; };
+		24714FF627CF4B3B005C5A3A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF527CF4B3B005C5A3A /* LoginViewController.swift */; };
+		24714FF827CF4D6E005C5A3A /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF727CF4D6E005C5A3A /* AuthViewModel.swift */; };
+		24714FFA27CF5112005C5A3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF927CF5112005C5A3A /* RegisterViewController.swift */; };
+		24714FFC27CF57E9005C5A3A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FFB27CF57E9005C5A3A /* KeychainService.swift */; };
+		24714FFE27CF5851005C5A3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FFD27CF5851005C5A3A /* Constants.swift */; };
 		9CBC60063E008F19801144DC /* Pods_ReliaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086EB1C9C54D23F5DDBFD2F0 /* Pods_ReliaTest.framework */; };
 		A0E2469AF9125606736DD6F5 /* Pods_ReliaTest_ReliaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BF9E75AD73E025FB6003B /* Pods_ReliaTest_ReliaTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -50,7 +62,7 @@
 		24714FA127CF1843005C5A3A /* ReliaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReliaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24714FA427CF1843005C5A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24714FA627CF1843005C5A3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24714FA827CF1843005C5A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24714FA827CF1843005C5A3A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		24714FAB27CF1843005C5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		24714FAE27CF1843005C5A3A /* ReliaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReliaTest.xcdatamodel; sourceTree = "<group>"; };
 		24714FB027CF1844005C5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -65,6 +77,18 @@
 		24714FDA27CF19EC005C5A3A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		24714FDD27CF1A70005C5A3A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		24714FE127CF1E9E005C5A3A /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		24714FE727CF40CE005C5A3A /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		24714FE827CF40CE005C5A3A /* ProductTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductTableViewCell.xib; sourceTree = "<group>"; };
+		24714FEB27CF4257005C5A3A /* UITabbleViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITabbleViewExtension.swift; sourceTree = "<group>"; };
+		24714FED27CF4286005C5A3A /* NSObjectextension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectextension.swift; sourceTree = "<group>"; };
+		24714FEF27CF42C1005C5A3A /* ProductViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewModel.swift; sourceTree = "<group>"; };
+		24714FF127CF4443005C5A3A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		24714FF327CF465B005C5A3A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		24714FF527CF4B3B005C5A3A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		24714FF727CF4D6E005C5A3A /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		24714FF927CF5112005C5A3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		24714FFB27CF57E9005C5A3A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		24714FFD27CF5851005C5A3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		346960DC12D07D7A720AD830 /* Pods-ReliaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest/Pods-ReliaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4A86326CCF6C6FDFA3F4E8A0 /* Pods-ReliaTest-ReliaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71B8EA8644A55C9652FAFFF6 /* Pods-ReliaTest-ReliaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,11 +160,13 @@
 		24714FA327CF1843005C5A3A /* ReliaTest */ = {
 			isa = PBXGroup;
 			children = (
+				24714FE527CF3E48005C5A3A /* Utils */,
+				24714FE427CF3E3E005C5A3A /* ViewModels */,
+				24714FE327CF3E38005C5A3A /* Views */,
 				24714FDC27CF1A45005C5A3A /* Models */,
 				24714FD727CF19C8005C5A3A /* Nerwork */,
 				24714FA427CF1843005C5A3A /* AppDelegate.swift */,
 				24714FA627CF1843005C5A3A /* SceneDelegate.swift */,
-				24714FA827CF1843005C5A3A /* ViewController.swift */,
 				24714FAA27CF1843005C5A3A /* Main.storyboard */,
 				24714FB027CF1844005C5A3A /* Assets.xcassets */,
 				24714FB227CF1844005C5A3A /* LaunchScreen.storyboard */,
@@ -183,6 +209,48 @@
 				24714FE127CF1E9E005C5A3A /* AuthModels.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		24714FE327CF3E38005C5A3A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				24714FE627CF40AD005C5A3A /* ProductCell */,
+				24714FA827CF1843005C5A3A /* HomeViewController.swift */,
+				24714FF327CF465B005C5A3A /* BaseViewController.swift */,
+				24714FF527CF4B3B005C5A3A /* LoginViewController.swift */,
+				24714FF927CF5112005C5A3A /* RegisterViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24714FE427CF3E3E005C5A3A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				24714FEF27CF42C1005C5A3A /* ProductViewModel.swift */,
+				24714FF127CF4443005C5A3A /* HomeViewModel.swift */,
+				24714FF727CF4D6E005C5A3A /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		24714FE527CF3E48005C5A3A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				24714FEB27CF4257005C5A3A /* UITabbleViewExtension.swift */,
+				24714FED27CF4286005C5A3A /* NSObjectextension.swift */,
+				24714FFB27CF57E9005C5A3A /* KeychainService.swift */,
+				24714FFD27CF5851005C5A3A /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		24714FE627CF40AD005C5A3A /* ProductCell */ = {
+			isa = PBXGroup;
+			children = (
+				24714FE727CF40CE005C5A3A /* ProductTableViewCell.swift */,
+				24714FE827CF40CE005C5A3A /* ProductTableViewCell.xib */,
+			);
+			path = ProductCell;
 			sourceTree = "<group>";
 		};
 		31E38DB291DF8CD5520DA485 /* Pods */ = {
@@ -308,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24714FB427CF1844005C5A3A /* LaunchScreen.storyboard in Resources */,
+				24714FEA27CF40CE005C5A3A /* ProductTableViewCell.xib in Resources */,
 				24714FB127CF1844005C5A3A /* Assets.xcassets in Resources */,
 				24714FAC27CF1843005C5A3A /* Main.storyboard in Resources */,
 			);
@@ -438,11 +507,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				24714FD927CF19E3005C5A3A /* NetworkService.swift in Sources */,
-				24714FA927CF1843005C5A3A /* ViewController.swift in Sources */,
+				24714FFE27CF5851005C5A3A /* Constants.swift in Sources */,
+				24714FA927CF1843005C5A3A /* HomeViewController.swift in Sources */,
+				24714FF027CF42C1005C5A3A /* ProductViewModel.swift in Sources */,
+				24714FF627CF4B3B005C5A3A /* LoginViewController.swift in Sources */,
+				24714FE927CF40CE005C5A3A /* ProductTableViewCell.swift in Sources */,
+				24714FFC27CF57E9005C5A3A /* KeychainService.swift in Sources */,
 				24714FE227CF1E9E005C5A3A /* AuthModels.swift in Sources */,
+				24714FF427CF465B005C5A3A /* BaseViewController.swift in Sources */,
+				24714FEC27CF4257005C5A3A /* UITabbleViewExtension.swift in Sources */,
 				24714FA527CF1843005C5A3A /* AppDelegate.swift in Sources */,
 				24714FDB27CF19EC005C5A3A /* NetworkError.swift in Sources */,
+				24714FF227CF4443005C5A3A /* HomeViewModel.swift in Sources */,
 				24714FA727CF1843005C5A3A /* SceneDelegate.swift in Sources */,
+				24714FF827CF4D6E005C5A3A /* AuthViewModel.swift in Sources */,
+				24714FFA27CF5112005C5A3A /* RegisterViewController.swift in Sources */,
+				24714FEE27CF4286005C5A3A /* NSObjectextension.swift in Sources */,
 				24714FAF27CF1843005C5A3A /* ReliaTest.xcdatamodeld in Sources */,
 				24714FDE27CF1A70005C5A3A /* Product.swift in Sources */,
 			);
