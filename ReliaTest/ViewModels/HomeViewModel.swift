@@ -22,6 +22,7 @@ protocol HomeProtocol: AnyObject {
     func checkAuthentication()
     func deleteProduct(sku: String)
     func search(sku: String)
+    func logout()
     var isAuthenticated: Bool {get set}
 }
 
@@ -96,6 +97,11 @@ class HomeViewModel: HomeProtocol {
     func checkAuthentication() {
         let token = KeychainWrapper.standard.string(forKey: Constants.tokenKey)
         self.isAuthenticated = token != nil
+    }
+    
+    func logout() {
+        let removeSuccessful: Bool = KeychainWrapper.standard.removeObject(forKey: Constants.tokenKey)
+        print("remove token\(removeSuccessful)")
     }
 }
 

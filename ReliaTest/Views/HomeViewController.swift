@@ -9,7 +9,7 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
-    @IBOutlet weak var authenticatedLabel: UILabel!
+    @IBOutlet weak var logoutButton: UIButton!
     @IBOutlet weak var buttonContainerView: UIStackView!
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
@@ -45,6 +45,15 @@ class HomeViewController: BaseViewController {
         viewModel?.fetchProducts()
     }
     
+    @IBAction func logoutButtonTapped(_ sender: Any) {
+        viewModel?.logout()
+        
+        viewModel?.checkAuthentication()
+        updateUI()
+        
+        viewModel?.fetchProducts()
+        
+    }
     
     @IBAction func loginTapped(_ sender: Any) {
     }
@@ -64,7 +73,7 @@ class HomeViewController: BaseViewController {
     func updateUI() {
         addButton?.isEnabled = viewModel?.isAuthenticated ?? false
         buttonContainerView.isHidden = viewModel?.isAuthenticated ?? false
-        authenticatedLabel.isHidden = !(viewModel?.isAuthenticated ?? false)
+        logoutButton.isHidden = !(viewModel?.isAuthenticated ?? false)
     }
 }
 

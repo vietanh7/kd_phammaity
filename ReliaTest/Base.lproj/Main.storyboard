@@ -19,14 +19,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="LPI-fG-vAp">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Authenticated" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdr-d0-1uM">
-                                        <rect key="frame" x="307" y="0.0" width="107" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemBlueColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k2j-KJ-Ril">
+                                        <rect key="frame" x="344.5" y="0.0" width="69.5" height="51.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                        <connections>
+                                            <action selector="logoutButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ocz-1b-Y69"/>
+                                        </connections>
+                                    </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qh6-e2-jFe">
-                                        <rect key="frame" x="259" y="20.5" width="155" height="31"/>
+                                        <rect key="frame" x="259" y="51.5" width="155" height="31"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZC-mW-HBO" userLabel="register">
                                                 <rect key="frame" x="0.0" y="0.0" width="77.5" height="31"/>
@@ -49,7 +51,7 @@
                                         </subviews>
                                     </stackView>
                                     <searchBar contentMode="redraw" placeholder="Search by sku" translatesAutoresizingMaskIntoConstraints="NO" id="6kP-A9-6Xb">
-                                        <rect key="frame" x="0.0" y="51.5" width="414" height="50"/>
+                                        <rect key="frame" x="0.0" y="82.5" width="414" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="UdT-FA-irR"/>
                                         </constraints>
@@ -59,7 +61,7 @@
                                         </connections>
                                     </searchBar>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="llO-M3-E8x">
-                                        <rect key="frame" x="0.0" y="101.5" width="414" height="672.5"/>
+                                        <rect key="frame" x="0.0" y="132.5" width="414" height="641.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <connections>
                                             <outlet property="dataSource" destination="BYZ-38-t0r" id="2Ih-bj-Jdr"/>
@@ -84,9 +86,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="01V-xh-pCE"/>
                     <connections>
-                        <outlet property="authenticatedLabel" destination="Kdr-d0-1uM" id="YGa-RH-Upq"/>
                         <outlet property="buttonContainerView" destination="qh6-e2-jFe" id="xOt-zc-IyT"/>
                         <outlet property="loginButton" destination="yde-qc-VSm" id="jox-zO-zXB"/>
+                        <outlet property="logoutButton" destination="k2j-KJ-Ril" id="dp7-h1-Emv"/>
                         <outlet property="registerButton" destination="GZC-mW-HBO" id="QWR-A8-Xns"/>
                         <outlet property="searchBar" destination="6kP-A9-6Xb" id="dUV-K9-amz"/>
                         <outlet property="tableView" destination="llO-M3-E8x" id="9CC-fh-P6W"/>
@@ -380,9 +382,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

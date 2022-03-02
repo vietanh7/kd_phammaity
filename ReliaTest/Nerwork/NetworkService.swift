@@ -115,9 +115,8 @@ class NetworkService: NetworkServiceProtocol {
        
         let urlString = baseUrlString + ApiResquest.search.rawValue
         let url = URL(string: urlString)!
-        let headers = self.getHeaders()
         
-        let requestData = AF.request(url, method: .post, parameters: jsonData, encoding: URLEncoding.httpBody, headers: headers)
+        let requestData = AF.request(url, method: .post, parameters: jsonData, encoding: URLEncoding.httpBody)
         
         return makeRequest(request: requestData)
     }
