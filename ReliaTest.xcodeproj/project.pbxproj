@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2436C2401E3531CE2ED213DD /* Pods_ReliaTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F78718B1F5DD6DA51B73C96 /* Pods_ReliaTestTests.framework */; };
+		24714FA527CF1843005C5A3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA427CF1843005C5A3A /* AppDelegate.swift */; };
+		24714FA727CF1843005C5A3A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA627CF1843005C5A3A /* SceneDelegate.swift */; };
+		24714FA927CF1843005C5A3A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FA827CF1843005C5A3A /* ViewController.swift */; };
+		24714FAC27CF1843005C5A3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24714FAA27CF1843005C5A3A /* Main.storyboard */; };
+		24714FAF27CF1843005C5A3A /* ReliaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24714FAD27CF1843005C5A3A /* ReliaTest.xcdatamodeld */; };
+		24714FB127CF1844005C5A3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24714FB027CF1844005C5A3A /* Assets.xcassets */; };
+		24714FB427CF1844005C5A3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24714FB227CF1844005C5A3A /* LaunchScreen.storyboard */; };
+		24714FBF27CF1844005C5A3A /* ReliaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FBE27CF1844005C5A3A /* ReliaTestTests.swift */; };
+		24714FC927CF1844005C5A3A /* ReliaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FC827CF1844005C5A3A /* ReliaTestUITests.swift */; };
+		24714FCB27CF1844005C5A3A /* ReliaTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FCA27CF1844005C5A3A /* ReliaTestUITestsLaunchTests.swift */; };
+		24714FD927CF19E3005C5A3A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FD827CF19E3005C5A3A /* NetworkService.swift */; };
+		24714FDB27CF19EC005C5A3A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FDA27CF19EC005C5A3A /* NetworkError.swift */; };
+		24714FDE27CF1A70005C5A3A /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FDD27CF1A70005C5A3A /* Product.swift */; };
+		24714FE227CF1E9E005C5A3A /* AuthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FE127CF1E9E005C5A3A /* AuthModels.swift */; };
+		9CBC60063E008F19801144DC /* Pods_ReliaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086EB1C9C54D23F5DDBFD2F0 /* Pods_ReliaTest.framework */; };
+		A0E2469AF9125606736DD6F5 /* Pods_ReliaTest_ReliaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BF9E75AD73E025FB6003B /* Pods_ReliaTest_ReliaTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24714FBB27CF1844005C5A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24714F9927CF1843005C5A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24714FA027CF1843005C5A3A;
+			remoteInfo = ReliaTest;
+		};
+		24714FC527CF1844005C5A3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24714F9927CF1843005C5A3A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24714FA027CF1843005C5A3A;
+			remoteInfo = ReliaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		086EB1C9C54D23F5DDBFD2F0 /* Pods_ReliaTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReliaTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE3729C91DD4EAC4B722D41 /* Pods-ReliaTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTestTests.release.xcconfig"; path = "Target Support Files/Pods-ReliaTestTests/Pods-ReliaTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F78718B1F5DD6DA51B73C96 /* Pods_ReliaTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReliaTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24714FA127CF1843005C5A3A /* ReliaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReliaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24714FA427CF1843005C5A3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24714FA627CF1843005C5A3A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24714FA827CF1843005C5A3A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24714FAB27CF1843005C5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24714FAE27CF1843005C5A3A /* ReliaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ReliaTest.xcdatamodel; sourceTree = "<group>"; };
+		24714FB027CF1844005C5A3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24714FB327CF1844005C5A3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24714FB527CF1844005C5A3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24714FBA27CF1844005C5A3A /* ReliaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReliaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24714FBE27CF1844005C5A3A /* ReliaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliaTestTests.swift; sourceTree = "<group>"; };
+		24714FC427CF1844005C5A3A /* ReliaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReliaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24714FC827CF1844005C5A3A /* ReliaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliaTestUITests.swift; sourceTree = "<group>"; };
+		24714FCA27CF1844005C5A3A /* ReliaTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReliaTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24714FD827CF19E3005C5A3A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		24714FDA27CF19EC005C5A3A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		24714FDD27CF1A70005C5A3A /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		24714FE127CF1E9E005C5A3A /* AuthModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModels.swift; sourceTree = "<group>"; };
+		346960DC12D07D7A720AD830 /* Pods-ReliaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest/Pods-ReliaTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4A86326CCF6C6FDFA3F4E8A0 /* Pods-ReliaTest-ReliaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		71B8EA8644A55C9652FAFFF6 /* Pods-ReliaTest-ReliaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A7561A845DDA91106BE4A21F /* Pods-ReliaTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest.release.xcconfig"; path = "Target Support Files/Pods-ReliaTest/Pods-ReliaTest.release.xcconfig"; sourceTree = "<group>"; };
+		CD180EE442E0A4512029270F /* Pods-ReliaTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTestTests/Pods-ReliaTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E82BF9E75AD73E025FB6003B /* Pods_ReliaTest_ReliaTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReliaTest_ReliaTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24714F9E27CF1843005C5A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CBC60063E008F19801144DC /* Pods_ReliaTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FB727CF1844005C5A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2436C2401E3531CE2ED213DD /* Pods_ReliaTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FC127CF1844005C5A3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0E2469AF9125606736DD6F5 /* Pods_ReliaTest_ReliaTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7B2A74E7917FB70DBE7BEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				086EB1C9C54D23F5DDBFD2F0 /* Pods_ReliaTest.framework */,
+				E82BF9E75AD73E025FB6003B /* Pods_ReliaTest_ReliaTestUITests.framework */,
+				1F78718B1F5DD6DA51B73C96 /* Pods_ReliaTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24714F9827CF1843005C5A3A = {
+			isa = PBXGroup;
+			children = (
+				24714FA327CF1843005C5A3A /* ReliaTest */,
+				24714FBD27CF1844005C5A3A /* ReliaTestTests */,
+				24714FC727CF1844005C5A3A /* ReliaTestUITests */,
+				24714FA227CF1843005C5A3A /* Products */,
+				31E38DB291DF8CD5520DA485 /* Pods */,
+				0F7B2A74E7917FB70DBE7BEF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		24714FA227CF1843005C5A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24714FA127CF1843005C5A3A /* ReliaTest.app */,
+				24714FBA27CF1844005C5A3A /* ReliaTestTests.xctest */,
+				24714FC427CF1844005C5A3A /* ReliaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24714FA327CF1843005C5A3A /* ReliaTest */ = {
+			isa = PBXGroup;
+			children = (
+				24714FDC27CF1A45005C5A3A /* Models */,
+				24714FD727CF19C8005C5A3A /* Nerwork */,
+				24714FA427CF1843005C5A3A /* AppDelegate.swift */,
+				24714FA627CF1843005C5A3A /* SceneDelegate.swift */,
+				24714FA827CF1843005C5A3A /* ViewController.swift */,
+				24714FAA27CF1843005C5A3A /* Main.storyboard */,
+				24714FB027CF1844005C5A3A /* Assets.xcassets */,
+				24714FB227CF1844005C5A3A /* LaunchScreen.storyboard */,
+				24714FB527CF1844005C5A3A /* Info.plist */,
+				24714FAD27CF1843005C5A3A /* ReliaTest.xcdatamodeld */,
+			);
+			path = ReliaTest;
+			sourceTree = "<group>";
+		};
+		24714FBD27CF1844005C5A3A /* ReliaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				24714FBE27CF1844005C5A3A /* ReliaTestTests.swift */,
+			);
+			path = ReliaTestTests;
+			sourceTree = "<group>";
+		};
+		24714FC727CF1844005C5A3A /* ReliaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24714FC827CF1844005C5A3A /* ReliaTestUITests.swift */,
+				24714FCA27CF1844005C5A3A /* ReliaTestUITestsLaunchTests.swift */,
+			);
+			path = ReliaTestUITests;
+			sourceTree = "<group>";
+		};
+		24714FD727CF19C8005C5A3A /* Nerwork */ = {
+			isa = PBXGroup;
+			children = (
+				24714FD827CF19E3005C5A3A /* NetworkService.swift */,
+				24714FDA27CF19EC005C5A3A /* NetworkError.swift */,
+			);
+			path = Nerwork;
+			sourceTree = "<group>";
+		};
+		24714FDC27CF1A45005C5A3A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24714FDD27CF1A70005C5A3A /* Product.swift */,
+				24714FE127CF1E9E005C5A3A /* AuthModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		31E38DB291DF8CD5520DA485 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				346960DC12D07D7A720AD830 /* Pods-ReliaTest.debug.xcconfig */,
+				A7561A845DDA91106BE4A21F /* Pods-ReliaTest.release.xcconfig */,
+				4A86326CCF6C6FDFA3F4E8A0 /* Pods-ReliaTest-ReliaTestUITests.debug.xcconfig */,
+				71B8EA8644A55C9652FAFFF6 /* Pods-ReliaTest-ReliaTestUITests.release.xcconfig */,
+				CD180EE442E0A4512029270F /* Pods-ReliaTestTests.debug.xcconfig */,
+				0EE3729C91DD4EAC4B722D41 /* Pods-ReliaTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24714FA027CF1843005C5A3A /* ReliaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24714FCE27CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTest" */;
+			buildPhases = (
+				1EC4FB8EF05D4A6C8A85E8C3 /* [CP] Check Pods Manifest.lock */,
+				24714F9D27CF1843005C5A3A /* Sources */,
+				24714F9E27CF1843005C5A3A /* Frameworks */,
+				24714F9F27CF1843005C5A3A /* Resources */,
+				DB733FCC1979AC485BE1F189 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReliaTest;
+			productName = ReliaTest;
+			productReference = 24714FA127CF1843005C5A3A /* ReliaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24714FB927CF1844005C5A3A /* ReliaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24714FD127CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTestTests" */;
+			buildPhases = (
+				95BE78C57D8A7AF1C555F955 /* [CP] Check Pods Manifest.lock */,
+				24714FB627CF1844005C5A3A /* Sources */,
+				24714FB727CF1844005C5A3A /* Frameworks */,
+				24714FB827CF1844005C5A3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24714FBC27CF1844005C5A3A /* PBXTargetDependency */,
+			);
+			name = ReliaTestTests;
+			productName = ReliaTestTests;
+			productReference = 24714FBA27CF1844005C5A3A /* ReliaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24714FC327CF1844005C5A3A /* ReliaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24714FD427CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTestUITests" */;
+			buildPhases = (
+				D6108303D0F3EEA851B7153F /* [CP] Check Pods Manifest.lock */,
+				24714FC027CF1844005C5A3A /* Sources */,
+				24714FC127CF1844005C5A3A /* Frameworks */,
+				24714FC227CF1844005C5A3A /* Resources */,
+				837D10FD69FC14D2D5E023F2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24714FC627CF1844005C5A3A /* PBXTargetDependency */,
+			);
+			name = ReliaTestUITests;
+			productName = ReliaTestUITests;
+			productReference = 24714FC427CF1844005C5A3A /* ReliaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24714F9927CF1843005C5A3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					24714FA027CF1843005C5A3A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					24714FB927CF1844005C5A3A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 24714FA027CF1843005C5A3A;
+					};
+					24714FC327CF1844005C5A3A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 24714FA027CF1843005C5A3A;
+					};
+				};
+			};
+			buildConfigurationList = 24714F9C27CF1843005C5A3A /* Build configuration list for PBXProject "ReliaTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24714F9827CF1843005C5A3A;
+			productRefGroup = 24714FA227CF1843005C5A3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24714FA027CF1843005C5A3A /* ReliaTest */,
+				24714FB927CF1844005C5A3A /* ReliaTestTests */,
+				24714FC327CF1844005C5A3A /* ReliaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24714F9F27CF1843005C5A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24714FB427CF1844005C5A3A /* LaunchScreen.storyboard in Resources */,
+				24714FB127CF1844005C5A3A /* Assets.xcassets in Resources */,
+				24714FAC27CF1843005C5A3A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FB827CF1844005C5A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FC227CF1844005C5A3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC4FB8EF05D4A6C8A85E8C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReliaTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		837D10FD69FC14D2D5E023F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95BE78C57D8A7AF1C555F955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReliaTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6108303D0F3EEA851B7153F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReliaTest-ReliaTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB733FCC1979AC485BE1F189 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReliaTest/Pods-ReliaTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReliaTest/Pods-ReliaTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReliaTest/Pods-ReliaTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24714F9D27CF1843005C5A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24714FD927CF19E3005C5A3A /* NetworkService.swift in Sources */,
+				24714FA927CF1843005C5A3A /* ViewController.swift in Sources */,
+				24714FE227CF1E9E005C5A3A /* AuthModels.swift in Sources */,
+				24714FA527CF1843005C5A3A /* AppDelegate.swift in Sources */,
+				24714FDB27CF19EC005C5A3A /* NetworkError.swift in Sources */,
+				24714FA727CF1843005C5A3A /* SceneDelegate.swift in Sources */,
+				24714FAF27CF1843005C5A3A /* ReliaTest.xcdatamodeld in Sources */,
+				24714FDE27CF1A70005C5A3A /* Product.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FB627CF1844005C5A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24714FBF27CF1844005C5A3A /* ReliaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24714FC027CF1844005C5A3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24714FCB27CF1844005C5A3A /* ReliaTestUITestsLaunchTests.swift in Sources */,
+				24714FC927CF1844005C5A3A /* ReliaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24714FBC27CF1844005C5A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24714FA027CF1843005C5A3A /* ReliaTest */;
+			targetProxy = 24714FBB27CF1844005C5A3A /* PBXContainerItemProxy */;
+		};
+		24714FC627CF1844005C5A3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24714FA027CF1843005C5A3A /* ReliaTest */;
+			targetProxy = 24714FC527CF1844005C5A3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24714FAA27CF1843005C5A3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24714FAB27CF1843005C5A3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24714FB227CF1844005C5A3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24714FB327CF1844005C5A3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24714FCC27CF1844005C5A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24714FCD27CF1844005C5A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24714FCF27CF1844005C5A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346960DC12D07D7A720AD830 /* Pods-ReliaTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReliaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24714FD027CF1844005C5A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7561A845DDA91106BE4A21F /* Pods-ReliaTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReliaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24714FD227CF1844005C5A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD180EE442E0A4512029270F /* Pods-ReliaTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReliaTest.app/ReliaTest";
+			};
+			name = Debug;
+		};
+		24714FD327CF1844005C5A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE3729C91DD4EAC4B722D41 /* Pods-ReliaTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReliaTest.app/ReliaTest";
+			};
+			name = Release;
+		};
+		24714FD527CF1844005C5A3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A86326CCF6C6FDFA3F4E8A0 /* Pods-ReliaTest-ReliaTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReliaTest;
+			};
+			name = Debug;
+		};
+		24714FD627CF1844005C5A3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71B8EA8644A55C9652FAFFF6 /* Pods-ReliaTest-ReliaTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = apptest.ReliaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReliaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24714F9C27CF1843005C5A3A /* Build configuration list for PBXProject "ReliaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24714FCC27CF1844005C5A3A /* Debug */,
+				24714FCD27CF1844005C5A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24714FCE27CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24714FCF27CF1844005C5A3A /* Debug */,
+				24714FD027CF1844005C5A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24714FD127CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24714FD227CF1844005C5A3A /* Debug */,
+				24714FD327CF1844005C5A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24714FD427CF1844005C5A3A /* Build configuration list for PBXNativeTarget "ReliaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24714FD527CF1844005C5A3A /* Debug */,
+				24714FD627CF1844005C5A3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24714FAD27CF1843005C5A3A /* ReliaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24714FAE27CF1843005C5A3A /* ReliaTest.xcdatamodel */,
+			);
+			currentVersion = 24714FAE27CF1843005C5A3A /* ReliaTest.xcdatamodel */;
+			path = ReliaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24714F9927CF1843005C5A3A /* Project object */;
+}
