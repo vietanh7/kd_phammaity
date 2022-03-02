@@ -20,6 +20,7 @@ protocol HomeProtocol: AnyObject {
     func productVM(at index: Int) -> ProductProtocol
     func fetchProducts()
     func checkAuthentication()
+    func deleteProduct(sku: String)
     var isAuthenticated: Bool {get set}
 }
 
@@ -52,6 +53,18 @@ class HomeViewModel: HomeProtocol {
                 }else {
                     self?.handleResponseData(products: response.value ?? [])
                     self?.delegate?.productsDidLoad()
+                }
+            }
+            .store(in: &cancellableSet)
+    }
+    
+    func deleteProduct(sku: String) {
+        serviceManager.deleteProduct(sku: sku)
+            .sink {[weak self] (response) in
+                if let _ = response.error {
+                    self?.delegate?.requestError(error: "System error")
+                }else {
+                    self?.fetchProducts()
                 }
             }
             .store(in: &cancellableSet)

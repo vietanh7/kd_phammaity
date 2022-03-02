@@ -10,12 +10,17 @@ import Foundation
 protocol ProductProtocol {
     var name: String {get}
     var sku: String {get}
+    var price: Double {get}
+    var quantity: Int {get}
+    var unit: String {get}
     var authenticated: Bool {get set}
     var onEditTapped:((Product) -> Void)? {get set}
     var onDeleteTapped:((String) -> Void)? {get set}
 }
 
 class ProductViewModel: ProductProtocol {
+
+    
     private let product: Product
     var authenticated: Bool = false
     
@@ -33,5 +38,17 @@ class ProductViewModel: ProductProtocol {
     
     var sku: String {
         return product.sku
+    }
+    
+    var price: Double {
+        return product.price
+    }
+    
+    var quantity: Int {
+        return product.quantity
+    }
+    
+    var unit: String {
+        return product.unit
     }
 }

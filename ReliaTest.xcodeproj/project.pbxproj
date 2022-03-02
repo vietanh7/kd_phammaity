@@ -34,6 +34,9 @@
 		24714FFA27CF5112005C5A3A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FF927CF5112005C5A3A /* RegisterViewController.swift */; };
 		24714FFC27CF57E9005C5A3A /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FFB27CF57E9005C5A3A /* KeychainService.swift */; };
 		24714FFE27CF5851005C5A3A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FFD27CF5851005C5A3A /* Constants.swift */; };
+		2471500027CF62EE005C5A3A /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714FFF27CF62EE005C5A3A /* ProductViewController.swift */; };
+		2471500227CF6690005C5A3A /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2471500127CF6690005C5A3A /* ProductDetailViewModel.swift */; };
+		2471500427CF6AA0005C5A3A /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2471500327CF6AA0005C5A3A /* AppUtils.swift */; };
 		9CBC60063E008F19801144DC /* Pods_ReliaTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 086EB1C9C54D23F5DDBFD2F0 /* Pods_ReliaTest.framework */; };
 		A0E2469AF9125606736DD6F5 /* Pods_ReliaTest_ReliaTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E82BF9E75AD73E025FB6003B /* Pods_ReliaTest_ReliaTestUITests.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +92,9 @@
 		24714FF927CF5112005C5A3A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		24714FFB27CF57E9005C5A3A /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
 		24714FFD27CF5851005C5A3A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		24714FFF27CF62EE005C5A3A /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		2471500127CF6690005C5A3A /* ProductDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModel.swift; sourceTree = "<group>"; };
+		2471500327CF6AA0005C5A3A /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
 		346960DC12D07D7A720AD830 /* Pods-ReliaTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest/Pods-ReliaTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4A86326CCF6C6FDFA3F4E8A0 /* Pods-ReliaTest-ReliaTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		71B8EA8644A55C9652FAFFF6 /* Pods-ReliaTest-ReliaTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; path = "Target Support Files/Pods-ReliaTest-ReliaTestUITests/Pods-ReliaTest-ReliaTestUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +225,7 @@
 				24714FF327CF465B005C5A3A /* BaseViewController.swift */,
 				24714FF527CF4B3B005C5A3A /* LoginViewController.swift */,
 				24714FF927CF5112005C5A3A /* RegisterViewController.swift */,
+				24714FFF27CF62EE005C5A3A /* ProductViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -229,6 +236,7 @@
 				24714FEF27CF42C1005C5A3A /* ProductViewModel.swift */,
 				24714FF127CF4443005C5A3A /* HomeViewModel.swift */,
 				24714FF727CF4D6E005C5A3A /* AuthViewModel.swift */,
+				2471500127CF6690005C5A3A /* ProductDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -240,6 +248,7 @@
 				24714FED27CF4286005C5A3A /* NSObjectextension.swift */,
 				24714FFB27CF57E9005C5A3A /* KeychainService.swift */,
 				24714FFD27CF5851005C5A3A /* Constants.swift */,
+				2471500327CF6AA0005C5A3A /* AppUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -507,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24714FD927CF19E3005C5A3A /* NetworkService.swift in Sources */,
+				2471500427CF6AA0005C5A3A /* AppUtils.swift in Sources */,
 				24714FFE27CF5851005C5A3A /* Constants.swift in Sources */,
 				24714FA927CF1843005C5A3A /* HomeViewController.swift in Sources */,
 				24714FF027CF42C1005C5A3A /* ProductViewModel.swift in Sources */,
@@ -523,7 +533,9 @@
 				24714FF827CF4D6E005C5A3A /* AuthViewModel.swift in Sources */,
 				24714FFA27CF5112005C5A3A /* RegisterViewController.swift in Sources */,
 				24714FEE27CF4286005C5A3A /* NSObjectextension.swift in Sources */,
+				2471500227CF6690005C5A3A /* ProductDetailViewModel.swift in Sources */,
 				24714FAF27CF1843005C5A3A /* ReliaTest.xcdatamodeld in Sources */,
+				2471500027CF62EE005C5A3A /* ProductViewController.swift in Sources */,
 				24714FDE27CF1A70005C5A3A /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

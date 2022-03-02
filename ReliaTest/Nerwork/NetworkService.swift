@@ -80,7 +80,7 @@ class NetworkService: NetworkServiceProtocol {
     func updateProduct(_ product: Product) -> AnyPublisher<DataResponse<Product, NetworkError>, Never> {
         let jsonData = product.dictionary
        
-        let urlString = baseUrlString + ApiResquest.addProduct.rawValue
+        let urlString = baseUrlString + ApiResquest.updateProduct.rawValue
         let url = URL(string: urlString)!
         let headers = self.getHeaders()
         

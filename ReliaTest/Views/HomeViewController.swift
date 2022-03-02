@@ -18,6 +18,7 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     
     var viewModel: HomeProtocol?
+    var addButton: UIBarButtonItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,10 @@ class HomeViewController: BaseViewController {
         
         //configure searchbar
         searchBar.placeholder = "Search by sku"
+        
+        //Add button
+        addButton = UIBarButtonItem(title: "Add", style: .plain, target: self, action: #selector(addProduct))
+        navigationItem.rightBarButtonItems = [addButton!]
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +45,7 @@ class HomeViewController: BaseViewController {
         
         viewModel?.fetchProducts()
     }
+    
     
     @IBAction func loginTapped(_ sender: Any) {
     }
@@ -52,7 +58,12 @@ class HomeViewController: BaseViewController {
         viewModel?.fetchProducts()
     }
     
+    @objc func addProduct() {
+        showAddScreen()
+    }
+    
     func updateUI() {
+        addButton?.isEnabled = viewModel?.isAuthenticated ?? false
         buttonContainerView.isHidden = viewModel?.isAuthenticated ?? false
         authenticatedLabel.isHidden = !(viewModel?.isAuthenticated ?? false)
     }
@@ -67,20 +78,49 @@ extension HomeViewController: UITableViewDataSource {
         let cell = tableView.dequeueCell(ProductTableViewCell.self, forIndexPath: indexPath)
         
         if let productVM = self.viewModel?.productVM(at: indexPath.row) {
-            cell.updateUI(productVM: productVM)
+            cell.updateUI(productVM: productVM, authenticated: viewModel?.isAuthenticated ?? false)
+            cell.onTapEdit = {[weak self] in
+                self?.showEditScreen(product: productVM)
+            }
+            
+            cell.onTapDelete = {[weak self] in
+                self?.confirmDeleteAlert(sku: productVM.sku)
+            }
         }
         
         return cell
     }
+    
+    func showEditScreen(product: ProductProtocol) {
+        let vc = ProductViewController.instantiate(product: product)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func showAddScreen() {
+        let vc = ProductViewController.instantiate(product: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func confirmDeleteAlert(sku: String){
+        let alert = UIAlertController(title: "Delete product", message: "Do you want to delete product \(sku)?", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Detele", style: .destructive, handler: {[weak self] action in
+            self?.viewModel?.deleteProduct(sku: sku)
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }
 
 //MARK: HomeDelegate
 extension HomeViewController: HomeDelegate {
     func productsDidLoad() {
+        self.tableView.refreshControl?.endRefreshing()
         self.tableView.reloadData()
     }
     
     func requestError(error: String) {
+        self.tableView.refreshControl?.endRefreshing()
         self.showErrorAlert(error: error)
     }
 }

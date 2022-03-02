@@ -14,6 +14,9 @@ class ProductTableViewCell: UITableViewCell {
     @IBOutlet weak var skuLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     
+    var onTapEdit:(()->Void)?
+    var onTapDelete:(()->Void)?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -22,17 +25,18 @@ class ProductTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func updateUI(productVM: ProductProtocol) {
+    func updateUI(productVM: ProductProtocol, authenticated: Bool) {
         self.skuLabel.text = productVM.sku
         self.nameLabel.text = productVM.name
+        self.buttonContainerView.isHidden = !authenticated
     }
     
     @IBAction func deleteButtonTapped(_ sender: Any) {
-        
+        self.onTapDelete?()
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {
-        
+        self.onTapEdit?()
     }
     
 }
